@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Complaints and Queries</title>
+<link rel="stylesheet" type="text/css" href="complaint.css">
+<script type="text/javascript" src="jqueryinst.js"></script> 
+
+<script type="text/javascript" src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+</head>
+
+<body>
+		<div class="wrapper">
+        
+            
+                <ul class="nav-area">
+                        <li>
+                                <a href="dashboard">HOME</a>
+                            </li>
+                            
+                    <li>
+                        <a href="aboutus">ABOUT US</a>
+                    </li>
+                    <li>
+                    <a href="services">SERVICES</a>
+                    </li>
+                   
+                    <li>
+                        <a href="parking">PARKING</a>
+                    </li>
+                    <li> <a href="complaint">COMPLAINTS</a></li>
+                </li>
+                <li> <a href="mini">MINITHEATER</a></li>
+                <li> <a href="sports">SPORTS</a></li>
+                <li> <a href="music">MUSIC SHOW</a></li>
+                <li id="log">
+                        <a href="login">LOG OUT</a>
+                    </li>
+                </ul>
+                </div>
+        <br><br>
+    
+
+<br><br>
+<div id="data">
+<h1>Complaints</h1>
+<br></br>
+
+<p>
+	Member/Members shall submit their complaint application to any of the Office bearers of the society, in writing, giving thereby the details of the complaint.
+	After receipt of such complaint application, the committee shall take decision thereof, in the coming Managing Committee Meeting. Such decision shall be communicated to the concerned member, within 15 days thereafter.</li>
+	If the Member/Members are not satisfied by the decision of the Committee, or does not receive any communication from the committee within 15 days, then he / they may make complaint to the Advisory Committee constituted by the General Body of the society.</li>
+	The formation and powers of such committee shall be as decided by the General Body. If the concerned member is not even satisfied with the decision given by such Advisory Committee, then as per the nature of the complaint, the complainant member may approach below mentioned authorised officer.</li>
+</p>
+<br><br>
+<br>
+</div>
+<div class="comp">
+
+<form method="post" id="comp" action="">
+
+
+<label> Flat number</label><br>
+<input type="number" name="flatno" id="flat"
+placeholder="Enter your flat number"><br>
+
+<label> Name</label><br>
+<input type="text" name="name" id="name"
+placeholder="Enter your name"><br>
+
+<label> Phone number</label><br>
+<input type="number" name="phoneno" id="phno"
+placeholder="Enter your phone number"><br>
+
+<label>Details of complaint</label><br>
+<input type="text" name="complaint" id="details"
+placeholder="Enter your complaint"><br></br>
+
+<input type="submit" value="Submit" id="sub">
+
+</form>
+
+</div>
+
+
+<img class ="image1" src="service.jpg"/>
+
+<br></br><br></br>
+<!--
+
+<div class="sugg">
+
+<form method="post" id="sugg" action="">
+
+<label>Feedback and queries</label><br>
+<input type="text" name="feedback" id="fb"
+placeholder="Your valuable suggestions are always welcome!"><br></br>
+
+<input type="submit" value="Submit" id="sub">
+
+</form>
+
+</div>
+
+<img class ="image2" src="feedback.jpg"/>
+
+--->
+</body>
+
+</html>
+<script>
+    $("#sub").click(function()
+    {
+        alert("Complaint successfully registered");
+    });
+
+</script>

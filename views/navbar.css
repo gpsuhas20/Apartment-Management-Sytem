@@ -1,0 +1,30 @@
+.nav-area{
+    float: right;
+    width: 100%;
+    height:50px;
+    list-style: none;
+    border-radius: 15px;
+    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+}
+.nav-area li{
+    display: inline-block;
+    text-align: justify;
+    margin-top: 15px;
+
+}
+.nav-area li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+}
+.nav-area li a:hover{
+    background: orange;
+    color: #333;
+
+}
+#log
+{
+    float: right;
+}

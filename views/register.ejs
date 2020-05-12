@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Registration Form Creation</title>
+<link rel ="stylesheet" type="text/css" href="navbar.css">
+<link rel="stylesheet" type="text/css" href="stylesheet1.css">
+<script type="text/javascript" src="jqueryinst.js"></script> 
+
+<script type="text/javascript" src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+</head>
+
+<body>
+       <br><br>
+<h1>Customer Registration</h1>
+
+<div class="register">
+
+<form method="post" id="register" action="">
+
+<h2> Register here</h2>
+
+<label>  Name:</label><br>
+<input type="text" name="name" id="name"
+placeholder="Enter your name"><br></br>
+
+<!--<label> Last Name:</label><br>
+<input type="text" name="lname" id="name"
+placeholder="Enter your last name"<br></br>-->
+<label> Mobile Number:</label><br>
+<!--<select id="ph" name="mobile">
+<option>+91</option>
+<option>+92</option>
+<option>+93</option>
+<option>+94</option>
+<option>+95</option>
+</select>-->
+<input type="tel" name="mobile" id="num" 
+placeholder="Enter your mobile number"><br></br>
+
+<label> Number of family members:</label><br>
+<input type="number" name="familyno" id="members"
+placeholder="No. of members"><br></br>
+
+<label> Number of vehicles owned:</label><br>
+<input type="number" name="vehicleno" id="vehicles"
+placeholder="No. of vehicles"><br></br>
+
+<label> Flat Number:</label><br>
+<input type="number" name="flatno" id="flat"
+placeholder="Flat No."><br></br>
+
+<label> E-mail:</label><br>
+<input type="email" name="email" id="name"
+placeholder="Enter your E-mail id"><br></br>
+
+<label> Password:</label><br>
+<input type="password" name="password" id="p"
+placeholder="Enter your password"><br></br>
+
+<label> Confirm password:</label><br>
+<input type="password" name="confirmpassword" id="cp"
+placeholder="Renter your password"><br></br>
+
+<br></br>
+
+<input type="submit" id="sub">
+
+</form>
+
+</div>
+
+</body>
+<script>
+    $("#num").focusout(()=>
+    {
+        var no=$("#num").val();
+        var check=/^[789][0-9]{9}/;
+        if(!no.match(check))
+        {
+            alert("!INVALID MOBILE NO");
+        }
+
+
+        
+    });
+    $("#cp").focusout(()=>
+    {   
+        var p=$("#p").val();
+        var cp=$("#cp").val();
+        if(p!=cp)
+        {
+            alert("PASSWORD NOT MATCHING");
+        }
+
+    });
+   
+</script>
+</html>

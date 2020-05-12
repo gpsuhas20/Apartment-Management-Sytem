@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url("https://surveyanyplace.com/wp-content/uploads/DJ-K-Beast-1.gif");
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+
+.nav-area{
+    float: right;
+    width: 100%;
+    height:50px;
+    list-style: none;
+    border-radius: 15px;
+    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+}
+.nav-area li{
+    display: inline-block;
+    text-align: justify;
+    margin-top: 15px;
+
+}
+.nav-area li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+}
+.nav-area li a:hover{
+    background: orange;
+    color: #333;
+
+}
+#log
+{
+    float: right;
+}
+.box1{
+    position: absolute;
+    width: 500px;
+    height: 240px;    
+    background:wheat;
+    left: 430px;
+    top: 375px;
+    text-align: inherit;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 15px;
+}
+.main{
+    font-size: 35px; 
+    text-align: center;
+    color:red;
+    
+   
+}
+
+
+#btn{
+    color:blue;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+}
+#btn:hover{
+    background: orange;
+    color: #333;
+}

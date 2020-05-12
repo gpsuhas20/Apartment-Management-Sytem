@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>EVENTS</title>
+    <link type="text/css" rel="stylesheet" href="music.css">
+    <script type="text/javascript" src="jqueryinst.js"></script> 
+
+<script type="text/javascript" src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+</head>
+
+<body>
+    
+        <div class="wrapper">
+        
+            
+                <ul class="nav-area">
+                        <li>
+                                <a href="dashboard">HOME</a>
+                            </li>
+                            
+                    <li>
+                        <a href="aboutus">ABOUT US</a>
+                    </li>
+                    <li>
+                    <a href="services">SERVICES</a>
+                    </li>
+                   
+                    <li>
+                        <a href="parking">PARKING</a>
+                    </li>
+                    <li> <a href="complaint">COMPLAINTS</a></li>
+                </li>
+                <li> <a href="mini">MINITHEATER</a></li>
+                <li> <a href="sports">SPORTS</a></li>
+                <li> <a href="music">MUSIC SHOW</a></li>
+                <li id="log">
+                        <a href="login">LOG OUT</a>
+                    </li>
+                </ul>
+                </div>
+        <br><br>
+       
+      
+    <header>
+            
+        <div class="box1">
+            <p><h1> DJ CONCERT: </h1>
+                
+                 BY <b>DJ PRANAV</b> AND<b> DJ SUHAS</b><BR>
+                MARK YOUR DATES ITS ON  <b>31ST DECEMBER 2019.</b><br> <B>TIMINGS : 9PM ONWARDS</B>  <BR>
+                BE THERE WITH YOUR FRIENDS .<BR>
+               <b> VENUE:PARTY HALL</b>
+                <br>
+                <br>
+
+                <button id="btn" >I'm Interested.</button>
+            </p>
+
+        </div>
+      
+      
+       
+       
+    </header>
+
+
+</body>
+
+
+
+</html>
+<script>
+    const rollSound = new Audio("music.mp3");
+$("#btn").click(function()
+{
+    rollSound.play();
+    
+    alert("SEE YOU ON DECEMBER 31ST");
+
+});
+
+
+
+
+
+
+</script>

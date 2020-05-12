@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Mini Theatre Seat Reservation</title>
+
+<link rel="stylesheet" type="text/css" href="seatstylesheet.css">
+<script type="text/javascript" src="jqueryinst.js"></script> 
+
+<script type="text/javascript" src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+</head>
+<body> 
+
+       
+        
+        <div class="wrapper">
+        
+            
+                <ul class="nav-area">
+                        <li>
+                                <a href="dashboard">HOME</a>
+                            </li>
+                            
+                    <li>
+                        <a href="aboutus">ABOUT US</a>
+                    </li>
+                    <li>
+                    <a href="services">SERVICES</a>
+                    </li>
+                   
+                    <li>
+                        <a href="parking">PARKING</a>
+                    </li>
+                    <li> <a href="complaint">COMPLAINTS</a></li>
+                </li>
+                <li> <a href="mini">MINITHEATER</a></li>
+                <li> <a href="sports">SPORTS</a></li>
+                <li> <a href="music">EVENT</a></li>
+                <li id="log">
+                        <a href="login">LOG OUT</a>
+                    </li>
+                </ul>
+                </div>
+        <br><br>
+        <br>
+        <br>
+        <div id ="gap"></div>
+        <div id="info">
+
+            <img src="kgf.jpg">
+
+            <div id="content">
+                MOVIE        : KGF CHAPTER 1<BR><br>
+                SHOW DATE    : 15TH DECEMBER 2019<BR><br>
+                SHOW TIMINGS : 6PM - 9PM
+
+
+            </div>
+
+
+
+        </div>
+<button id="show">SHOW SEATS</button>
+
+ <div id="layout"  style="display :none">          
+
+        <h1>Book your seats here!</h1>
+
+
+
+<table>
+<tr>
+<th><div class="seatr">A1 </div></th>
+<th><div class="seatr"> A2</div></th>
+<th><div class="seatr"> A3</div></th>
+<th><div class="seatr">A4 </div></th>
+<th><div class="seatr"> A5</div></th>
+
+
+
+<th><div class="seatr"> A6</div></th>
+<th><div class="seatr">A7 </div></th>
+<th><div class="seatr"> A8</div></th>
+<th><div class="seatr"> A9</div></th>
+<th><div class="seatr"> A10</div></th>
+</tr>
+
+<tr>
+<th><div class="seatr">B11 </div></th>
+<th><div class="seatr"> B12</div></th>
+<th><div class="seatr"> B13</div></th>
+<th><div class="seatr"> B14</div></th>
+<th><div class="seatr"> B15</div></th>
+
+<th><div class="seatr">B16 </div></th>
+<th><div class="seatr"> B17</div></th>
+<th><div class="seatr"> B18</div></th>
+<th><div class="seatr">B19 </div></th>
+<th><div class="seatr"> B20</div></th>
+</tr>
+
+<tr>
+<th><div class="seatr">C21 </div></th>
+<th><div class="seatr"> C22</div></th>
+<th><div class="seatr"> C23</div></th>
+<th><div class="seatr"> C24</div></th>
+<th><div class="seatr"> C25</div></th>
+<th><div class="seatr"> C26</div></th>
+<th><div class="seatr">C27 </div></th>
+<th><div class="seatr"> C28</div></th>
+<th><div class="seatr"> C29</div></th>
+<th><div class="seatr"> C30</div></th>
+<tr>
+<tr>
+    <th><div class="seatr">D31 </div></th>
+    <th><div class="seatr"> D32</div></th>
+    <th><div class="seatr"> D33</div></th>
+    <th><div class="seatr"> D34</div></th>
+    <th><div class="seatr"> D35</div></th>
+    <th><div class="seatr"> D36</div></th>
+    <th><div class="seatr">D37 </div></th>
+    <th><div class="seatr"> D38</div></th>
+    <th><div class="seatr"> D39</div></th>
+    <th><div class="seatr"> D40</div></th>
+    </tr>
+    <tr>
+        <th><div class="seatr">E41 </div></th>
+        <th><div class="seatr"> E42</div></th>
+        <th><div class="seatr"> E43</div></th>
+        <th><div class="seatr"> E44</div></th>
+        <th><div class="seatr"> E45</div></th>
+    
+        <th><div class="seatr"> E46</div></th>
+        <th><div class="seatr">E47 </div></th>
+        <th><div class="seatr"> E48</div></th>
+        <th><div class="seatr"> E49</div></th>
+        <th><div class="seatr"> E50</div></th>
+        </tr>
+</table>
+
+<div>
+    <div class="register">
+            <form method="post" id="register" action="">
+         <label>Selcted tickets</label><br>
+    <textarea id="tickets"  name="selectedtickets" rows="5" cols ="40"></textarea><br>
+   
+    <label>Flat no:</label><br>
+    <input type="text" name="flatno" id="flatno"
+    placeholder="Flat No"><br>
+    <label> Number of seats:</label><br>
+    <input type="text" name="seat" id="members"
+    placeholder="No. of seats">
+    <br>
+
+    
+    <input type="submit" value="Book Seats" id="book">
+    <form>
+        </div>
+       
+    </div>
+ 
+    
+<div>    
+
+</body>
+<script>
+    $("#show").hover(function()
+        {
+            $("#show").css("background-color","grey");
+            $("#show").css("cursor","pointer");
+
+        }
+    
+    );
+
+    $("#show").click(function()
+    {
+        $("#info").toggle();
+        $("#layout").toggle();
+    });
+    var i=0;
+    $(".seatr").click(function()
+    {i++;
+        $("#members").val(i);
+       var a=this;
+       
+        //var btn = document.createElement("BUTTON");
+        //btn.innerHTML = this.innerHTML;
+        var TheTextBox = document.getElementById("tickets");
+    TheTextBox.value = TheTextBox.value + this.innerHTML;
+   a.style.backgroundColor="grey";
+        document.body.appendChild(btn);
+        
+   
+}
+       
+          
+       
+    );
+    $("#book").click(function()
+    {
+        alert("TICKETS BOOOKED SUCCESSFULLY");
+
+    });
+
+</script>
+
+</html>

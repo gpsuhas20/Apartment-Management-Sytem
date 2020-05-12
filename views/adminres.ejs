@@ -1,0 +1,188 @@
+<html>
+        <script type="text/javascript" src="jqueryinst.js"></script> 
+        <link rel="stylesheet" type="text/css" href="admin.css"
+        <script type="text/javascript" src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <body>
+        
+        <div id="leftpanel">
+        <div id="i1">
+            USERS
+        </div><br><br><br>
+        <div id="i2">
+                MINI THEATER
+            </div><br><br><br>
+            <div id="i3">
+                    COMPLAINTS
+            </div><br><br><br>
+             <div id="i4">
+                        PARKING SLOTS
+             </div><br><br><br>
+        
+        </div>
+        <h1> ADMIN </h1>
+     
+         
+      
+        <div id="memberdetails">
+           
+     
+           
+       <% var members=data[0]%>
+       <% var comp=data[1]%>
+       <% var seats=data[2]%>
+       <% var vehicle=data[3]%>
+      
+      <!-- taking the doc 1 and doc2 -->
+       <table class ="content-table">
+           <thead>
+                <tr>
+                <th>FLAT NUMBER</th>
+                <th>NAME</th>
+                <th>MOBILE NO</th>
+                <th>FAMILY MEMBERS</th>
+                <th>VEHICLES</th>
+                <th>EMAIL</th>
+               </tr>
+           </thead>
+           <tbody>
+            <%for(var i=0;i<members.length;i++){%>
+                <tr>
+                <td><%=members[i].flatno%></td>
+                <td><%=members[i].name%></td>
+                <td><%=members[i].mobile%></td>
+                <td><%=members[i].familyno%></td>
+                <td><%=members[i].vehicleno%></td>
+                <td><%=members[i].email%></td>
+                </tr>
+                <%}%>
+            </tbody>
+            </table>
+     
+           
+        </div>
+       
+        <div id="complaint">
+               
+               
+                        <table class ="content-table">
+                         
+                    <thead>
+                            <tr>
+                                    <th>FLAT NUMBER</th>
+                                    <th>NAME</th>
+                                    <th>MOBILE NO</th>
+                                    <th>COMPLAINT</th>
+                            </tr>
+                    </thead>
+                    <tbody>
+                <%for(var i=0;i<comp.length;i++){%>
+                    <tr>
+                        <td><%=comp[i].flatno%></td>
+                        <td><%=comp[i].name%></td>
+                        <td><%=comp[i].phoneno%></td>
+                        <td><%=comp[i].complaint%></td>
+                    </tr>
+                    <%}%>
+                    </tbody>
+                </table>
+        </div>
+        <div id="seats">
+                <table class ="content-table">
+                    <thead>
+                            <tr>
+                                    <th>FLAT NUMBER</th>
+                                    <th>SELECTED SEATS</th>
+                                    <th>NO OF SEATS</th>
+                                   
+                        </tr>
+                    </thead>
+
+<tbody>
+                    <%for(var i=0;i<seats.length;i++){%>
+                            <tr>
+                                <td><%=seats[i].flatno%></td>
+                                <td><%=seats[i].selectedtickets%></td>
+                                <td><%=seats[i].seat%></td>
+                                
+                            </tr>
+                            <%}%>
+                        </tbody>
+            </table>
+        </div>
+        <div id="parking">
+                <table class ="content-table">
+           
+                    <thead>
+                            <tr>
+                                    <th>FLAT NUMBER</th>
+                                    <th>VEHICLE NUMBER</th>
+                                    <th>VEHICLE MODEL</th>
+                                   
+                        </tr>
+                    </thead>
+<tbody>
+
+                    <%for(var i=0;i<vehicle.length;i++){%>
+                            <tr>
+                                <td><%=vehicle[i].flatno%></td>
+                                <td><%=vehicle[i].vehicleno%></td>
+                                <td><%=vehicle[i].vehiclemodel%></td>
+                                
+                            </tr>
+                            <%}%>
+
+                
+                
+                        </tbody>
+
+            </table>
+        </div>
+       
+    
+    </body>
+    <script>
+       $("#i1").click(function()
+       {
+        $("#memberdetails").show();
+        $("#parking").hide();
+        $("#seats").hide();
+        $("#complaint").hide();
+
+       });
+       $("#i2").click(function()
+       {
+        $("#memberdetails").hide();
+        $("#parking").hide();
+        $("#seats").show();
+        $("#complaint").hide();
+
+       });
+       $("#i3").click(function()
+       {
+        $("#memberdetails").hide();
+        $("#parking").hide();
+        $("#seats").hide();
+        $("#complaint").show();
+
+       });
+       $("#i4").click(function()
+       {
+        $("#memberdetails").hide();
+        $("#parking").show();
+        $("#seats").hide();
+        $("#complaint").hide();
+
+       });
+        
+        $("#view").click(function(){
+
+
+            
+            $("#memberdetails").toggle();
+
+        });
+        
+
+
+        </script>
+</html>

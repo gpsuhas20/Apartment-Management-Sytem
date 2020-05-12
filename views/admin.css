@@ -1,0 +1,79 @@
+#leftpanel
+{
+    font-size: 25px;
+    padding: 5px;
+    float: left;
+    
+    height: 100%;
+    width: 225px;
+    margin-right: 30px;
+    border: raduis 40px;
+    
+}
+body{
+    background: #11998e;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: black;
+}
+h1
+{
+    margin-top:10px;
+    text-align:center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#i1,#i2,#i3,#i4{
+    margin-top:10px;
+    list-style-type:none;
+    background-color:orangered ;
+    opacity: .8;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    padding: 5px;
+    text-align: center;
+    
+  
+}
+#parking,#seats,#complaint,#memberdetails
+{
+    display: none;
+}
+#i1:hover,#i2:hover,#i3:hover,#i4:hover{
+    
+    background-color:orange;
+    cursor: pointer;
+    
+
+
+}
+
+.content-table
+{
+    border-collapse: collapse;/* reducing space bw cells*/
+    margin: 25px;
+    text-align: center;
+    font-size: 0.9em;
+    border: 2px solid black;
+    min-width: 400px;
+
+    
+    
+    
+}
+.content-table thead tr{
+    margin:25px;
+    background-color:greenyellow;
+    border: 2px solid black;
+    text-align:center;
+    color:black;
+   
+
+}
+.content-table th,.content-table td{/* padding for cells that is td and th*/
+    padding: 12px 15px;
+
+}
+.content-table tbody tr:last-of-type{
+    border-bottom: 2px solid black;
+}

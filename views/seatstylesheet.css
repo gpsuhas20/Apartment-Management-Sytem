@@ -1,0 +1,163 @@
+.nav-area{
+    float: right;
+    width: 100%;
+    height:50px;
+  
+    list-style: none;
+    border-radius: 15px;
+    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+}
+.nav-area li{
+    display: inline-block;
+    text-align: justify;
+    margin-top: 15px;
+
+}
+.nav-area li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+}
+.nav-area li a:hover{
+    background: orange;
+    color: #333;
+
+}
+#log
+{
+    float: right;
+}
+#show
+{
+   margin-left:570px;
+   margin-top:5px;
+    background-color:whitesmoke;
+    height: 50px;
+    width: 150px;
+}
+#info
+{
+    text-align: center;
+    margin-left:450px ;
+    border: 2px solid grey;
+    height: 550px;
+    width: 400px;
+    background: #D1913C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFD194, #D1913C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFD194, #D1913C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+img{
+    height: 350px;
+    width:250px;
+   
+}
+#content
+{
+
+    margin-top: 40px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+body
+{
+background-image: url(th.jpg);
+/*background-image:url(minitheater3.jpg);*/
+background-size: cover;
+height: 100%;
+width: 100%;
+margin-top: 20px;
+margin-right:20px;
+margin-left: 20px;
+background-repeat:no repeat;
+}
+h1
+{
+text-align:center;
+font-size:45px;
+background: coral;
+border : 2px solid  ;
+border-radius: 10px;
+
+}
+h2
+{
+font-size:20px;
+}
+#gap
+{
+    width: 10px;
+    float: left;
+}
+
+.seatr
+{background:#FCF9EA;
+    width: 45px;
+    padding:20px;
+    margin: 15px;
+    height: 35px;
+    display:inline-block;
+    border-radius: 20px;;
+}
+.seatr:hover 
+{
+    opacity: 0.8;
+color:#FFF222;
+cursor: pointer;
+}
+
+.selseat
+{background:grey;
+    width: 40px;
+    padding:25px;
+    margin: 15px;
+    height: 30px;
+    display:inline-block;
+    border-radius: 20px;;
+}
+#seat
+{
+width:100px;
+border:none;
+border-radius:3px;
+outline:0;
+padding:7px;
+}
+#book
+{
+width:200px;
+font-size:15px;
+font-family:sans-serif;
+font-style:italic;
+font-weight:600;
+border:none;
+border-radius:3px;
+outline:0;
+padding:7px;
+}
+.register {
+margin: 0px 0px 0px 430px;
+background: #D1913C;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFD194, #D1913C);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFD194, #D1913C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+width: 400px;
+padding:25px;
+color:#2B2B52;
+font-size:30px;
+border-radius:10px;
+}
+#register
+{
+margin-left:50px;
+}
+#label
+{
+color:#2B2B52;
+font-family:sans-serif;
+font-size:100px;
+font-style:italic;
+}
