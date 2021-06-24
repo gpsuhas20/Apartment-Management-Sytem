@@ -1,0 +1,225 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.nav-bar{
+
+  color:  white;
+  width: 100%;
+  margin-left: 12rem;
+}
+
+.nav-container{
+  background-color:#34ace0;
+  width: 100%;
+  
+
+}
+
+
+
+.nav-head{
+  font-family:'Copperplate';
+  margin-top: 1.5rem;
+  font-size: 4rem;
+}
+
+.nav-desc{
+  font-family:'Copperplate';
+  font-size: 2.5rem;
+  margin-left: 7rem;
+}
+
+.images{
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  border-top-left-radius: 100px;
+ -webkit-border-top-left-radius: 100px;
+ -moz-border-top-left-radius: 100px;
+ border-bottom-right-radius: 100px;
+ -webkit-border-bottom-right-radius: 100px;
+ -moz-border-bottom-right-radius: 100px;
+  background-size: cover;
+  display: block;
+  margin:0.5rem;
+  margin-left: 4rem;
+}
+
+.abc{
+  background-color: #072F5F;
+  color: white;
+  height: 70.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.aside-bar{
+  /*background-color:#e7c5f3;
+  border-radius: 25px;*/
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-right: 5px solid white;
+  height:70.5rem;
+  color:white;
+}
+
+.section-2{
+  
+ padding:1rem;
+  margin: auto;
+  padding-bottom: 0;
+ 
+}
+
+.underline{
+  border-bottom: 2px solid;
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 1rem;
+}
+
+.body{
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
+
+.exp{
+  margin-bottom: 1rem;
+}
+
+.certificate{
+  height:30px;
+  width: 30px;
+}
+
+.margin-para{
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.margin-last{
+  padding-bottom: 0;
+  font-size: 1.2rem;
+
+}
+
+.margin-aside{
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.margin-span{
+  margin-right: 0.5rem;
+}
+
+.margin-top{
+  margin-top: 1rem;
+}
+
+.footer{
+  height: 70px;
+  background-color:#34ace0;
+  width: 80%;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5rem;
+  color:white;
+}
+
+.footer-icon{
+  margin-left: 5rem;
+  color: white;
+}
+
+.links{
+  margin-right: 1rem;
+  color: white;
+}
+
+.footer-nav{
+  margin-left: 35%;
+  color: white;
+}
+
+a{
+  text-decoration: none;
+}
+
+.bar{
+  background: white;
+  display: block;
+  height: 7px;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #2187e7b3;
+  margin: 0.5rem;
+}
+
+.bar span{
+  background: #5cbce6;
+  height: 7px;
+  float: left;
+}
+
+.web{
+  width: 80%;
+}
+
+.c{
+  width: 80%;
+}
+
+.python{
+  width: 70%;
+}
+
+.java{
+  width: 50%;
+}
+
+.ml{
+  width: 30%;
+}
+
+.sql{
+  width: 60%;
+}
+
+.gfg{
+  width: 60%;
+}
